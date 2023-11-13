@@ -8,9 +8,19 @@
   background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
 }
 
+.hero * {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
+
 #container {
-  border: 1px solid purple;
   width: 360px;
-  height: 712px;
+  margin: auto;
+  border: 1px solid purple;
+}
+
+#profile img {
+  display: block;
+  width: 112px;
   margin: auto;
 }
