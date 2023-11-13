@@ -18,9 +18,17 @@
   margin: auto;
   border: 1px solid purple;
 }
+#profile{
+  text-align: center;
+}
 
 #profile img {
   display: block;
   width: 112px;
   margin: auto;
+}
+
+#profile p{
+  font-weight: 500;
+  line-height: 24px;
 }
