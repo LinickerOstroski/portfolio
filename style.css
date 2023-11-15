@@ -30,8 +30,10 @@
 }
 
 #profile p {
+  padding: 12px;
   font-weight: 500;
   line-height: 24px;
+  font-size: 20px;
   margin-top: 12px;
 }
 
@@ -62,19 +64,17 @@ ul li a {
   font-weight: 500;
 
   transition: background 0.3s;
-  transition: padding 0.2s;
 }
 /* Esse hover, dentro do CSS é responsável quando eu passar o mouse em cima*/
 ul li a:hover {
   border: 1.5px solid white;
   background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.02));
-  padding: 13px;
 }
 
 #social-links {
   display: flex;
-  gap: 16px;
-  padding: 24px 0px;
+  gap: 25px;
+  padding: 8px 0px;
   font-size: 28px;
 
   justify-content: center;
@@ -96,6 +96,7 @@ ul li a:hover {
 
 .hero footer{
   display: flex;
+  padding: 5px;
   justify-content: center;
   font-size: 14px;
   font-weight: 400;
