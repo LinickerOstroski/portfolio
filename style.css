@@ -93,3 +93,10 @@ ul li a:hover {
   padding: 8px;
   border-radius: 50%;
 }
+
+.hero footer{
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+}
