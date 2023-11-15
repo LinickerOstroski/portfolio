@@ -16,6 +16,7 @@
 #container {
   width: 360px;
   margin: 56px auto 0px;
+  padding: 0 24px;
 }
 #profile {
   text-align: center;
@@ -42,6 +43,8 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  padding: 24px 0;
 }
 
 ul li a {
@@ -58,10 +61,19 @@ ul li a {
   text-decoration: none;
   font-weight: 500;
 
-  transition: background .6s;
+  transition: background 0.3s;
 }
 /* Esse hover, dentro do CSS é responsável quando eu passar o mouse em cima*/
 ul li a:hover {
   border: 1.5px solid white;
   background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.02));
+}
+
+#social-links {
+  display: flex;
+  gap: 16px;
+  padding: 24px 0px;
+  font-size: 28px;
+
+  justify-content: center;
 }
