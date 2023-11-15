@@ -4,13 +4,30 @@
   box-sizing: border-box;
 }
 
+:root{
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.4);
+  --surface-color: rgba(255,255,255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(255,255,255,0.2);
+}
+
+.light{
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.2);
+  --surface-color: rgba(0, 0, 0, 0.08);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0,0,0,0.1);
+}
 .hero {
-  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
 }
 
 .hero * {
   font-family: "Inter", sans-serif;
-  color: #ffffff;
+  color: var(--text-color)
 }
 
 #container {
@@ -55,8 +72,8 @@ ul li a {
   justify-content: center;
 
   border-radius: 22px;
-  border: 1px solid var(--stroke-color-dark-mode, rgba(255, 255, 255, 0.4));
-  background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.08));
+  border: 1px solid var(--stroke-color);
+  background: var(--surface-color);
 
   padding: 16px 24px;
 
@@ -67,8 +84,8 @@ ul li a {
 }
 /* Esse hover, dentro do CSS é responsável quando eu passar o mouse em cima*/
 ul li a:hover {
-  border: 1.5px solid white;
-  background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.02));
+  border: 1.5px solid var(--text-color);
+  background: var(--surface-color-hover);
 }
 
 #social-links {
@@ -89,7 +106,7 @@ ul li a:hover {
 }
 
 #social-links a:hover{
-  background : rgba(255, 255, 255, 0.2);
+  background: var(--highlight-color);
   padding: 8px;
   border-radius: 50%;
 }
@@ -101,3 +118,4 @@ ul li a:hover {
   font-size: 14px;
   font-weight: 400;
 }
+
