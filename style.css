@@ -62,11 +62,13 @@ ul li a {
   font-weight: 500;
 
   transition: background 0.3s;
+  transition: padding 0.2s;
 }
 /* Esse hover, dentro do CSS é responsável quando eu passar o mouse em cima*/
 ul li a:hover {
   border: 1.5px solid white;
   background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.02));
+  padding: 13px;
 }
 
 #social-links {
@@ -78,6 +80,16 @@ ul li a:hover {
   justify-content: center;
 }
 
-#social-links:hover{
-  
+#social-links a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: padding 0.2s;
+}
+
+#social-links a:hover{
+  background : rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 50%;
 }
