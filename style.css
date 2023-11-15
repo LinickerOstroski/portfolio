@@ -57,6 +57,8 @@ ul li a {
 
   text-decoration: none;
   font-weight: 500;
+
+  transition: background .6s;
 }
 /* Esse hover, dentro do CSS é responsável quando eu passar o mouse em cima*/
 ul li a:hover {
