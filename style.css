@@ -56,10 +56,10 @@
   margin-top: 12px;
 }
 
-#switch{
-  position:relative;
-   width: 64px;
-   margin: 0 auto;
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 0 auto;
 }
 
 #switch button {
@@ -71,11 +71,15 @@
 
   position: absolute;
   top: 50%;
- 
+  left: 0;
   z-index: 1;
   transform: translateY(-50%);
 }
 
+.light #switch button {
+  right: 0;
+  left: initial;
+}
 #switch span {
   display: block;
   width: 64px;
