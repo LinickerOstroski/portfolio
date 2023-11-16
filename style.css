@@ -4,24 +4,24 @@
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --text-color: white;
   --bg-url: url(./assets/bg-desktop.jpg);
   --stroke-color: rgba(255, 255, 255, 0.4);
-  --surface-color: rgba(255,255,255, 0.1);
+  --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
-  --highlight-color: rgba(255,255,255,0.2);
-  --switch-bg-url: url(./assets/moon-stars.svg)
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
-.light{
+.light {
   --text-color: black;
   --bg-url: url(./assets/bg-desktop-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.2);
   --surface-color: rgba(0, 0, 0, 0.08);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(0,0,0,0.1);
-  --switch-bg-url: url(./assets/sun.svg)
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg);
 }
 .hero {
   background: var(--bg-url) no-repeat top center/cover;
@@ -29,7 +29,7 @@
 
 .hero * {
   font-family: "Inter", sans-serif;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 #container {
@@ -49,22 +49,42 @@
 }
 
 #profile p {
-  padding: 12px;
+  padding: 6px;
   font-weight: 500;
   line-height: 24px;
   font-size: 20px;
   margin-top: 12px;
 }
 
-#switch button{
+#switch{
+  position:relative;
+   width: 64px;
+   margin: 0 auto;
+}
+
+#switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
 
+  position: absolute;
+  top: 50%;
+ 
+  z-index: 1;
+  transform: translateY(-50%);
 }
 
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+
+  border: 1px solid var(--stroke-color);
+  background: var(--surface-color);
+  border-radius: 9999px;
+}
 /* links */
 
 ul {
@@ -108,7 +128,7 @@ ul li a:hover {
   justify-content: center;
 }
 
-#social-links a{
+#social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,17 +136,16 @@ ul li a:hover {
   transition: padding 0.2s;
 }
 
-#social-links a:hover{
+#social-links a:hover {
   background: var(--highlight-color);
   padding: 8px;
   border-radius: 50%;
 }
 
-.hero footer{
+.hero footer {
   display: flex;
   padding: 5px;
   justify-content: center;
   font-size: 14px;
   font-weight: 400;
 }
-
